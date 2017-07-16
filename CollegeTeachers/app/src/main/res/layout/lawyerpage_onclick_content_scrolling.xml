@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:theme="@style/AppTheme.NoActionBar">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20sp"
+                        android:text="Name:"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1" />
+
+                <TextView
+                    android:id="@+id/std_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginTop="20sp"
+                    android:text="Std:"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1" />
+
+                <TextView
+                    android:id="@+id/branch_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginTop="20sp"
+                    android:text="Branch:"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1" />
+
+                <TextView
+                    android:id="@+id/preference_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginTop="20sp"
+                    android:text="Preference:"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                >
+
+                <TextView
+                    android:id="@+id/textViewCommunicationSkills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_alignParentStart="true"
+                    android:text="1) Communication Skills"
+                    android:textSize="25sp" />
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/ratingStarscs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewCommunicationSkills"
+                    android:numStars="10"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                     />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1"
+                    android:layout_below="@+id/ratingStarscs"/>
+
+                <TextView
+                    android:id="@+id/textViewaap"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingStarscs"
+                    android:text="2) Appearance and Personality"
+                    android:textSize="25sp" />
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/ratingStarsaap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewaap"
+                    android:numStars="10"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                     />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1"
+                    android:layout_below="@+id/ratingStarsaap"/>
+
+                <TextView
+                    android:id="@+id/textViewta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingStarsaap"
+                    android:padding="5dp"
+                    android:text="3) Technical Achievements"
+                    android:textSize="25sp" />
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/ratingStarsta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewta"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                    android:numStars="10"
+                     />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1"
+                    android:layout_below="@+id/ratingStarsta"/>
+
+                <TextView
+                    android:id="@+id/textViewos"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingStarsta"
+                    android:text="4) Organisational Skills"
+                    android:textSize="25sp" />
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/ratingStarsos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewos"
+                    android:numStars="10"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1"
+                    android:layout_below="@+id/ratingStarsos"/>
+
+                <TextView
+                    android:id="@+id/textViewoverallsuitability"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ratingStarsos"
+                    android:text="5) Overall Suitability"
+                    android:textSize="25sp" />
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/ratingStarsoverallsuitability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewoverallsuitability"
+                    android:numStars="10"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                     />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1"
+                    android:layout_below="@+id/ratingStarsoverallsuitability"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a1a1a1"
+                    android:layout_above="@+id/person_discription_title_tv"
+                    />
+
+                <TextView
+                    android:id="@+id/person_discription_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Remarks"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:layout_below="@+id/ratingStarsoverallsuitability"
+                    android:layout_centerHorizontal="true" />
+
+                <EditText
+                    android:id="@+id/person_description_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="160"
+                    android:textColor="#646464"
+                    android:layout_below="@+id/person_discription_title_tv"
+                     />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttondone"
+                    android:textColor="#FFF"
+                    android:text="Done"
+                    android:layout_below="@+id/person_description_et"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
